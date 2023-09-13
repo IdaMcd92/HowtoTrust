@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
+    
 </head>
 <body>
+ 
     <header>
         <h1>Welcome to Geeky Life hacks! </h1>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
+                <span class="glyphicon glyphicon-home"></span>
+                <li><a href="#about">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#hacks">Hacks</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -25,14 +30,14 @@
     </section>
 
     <section id="about">
-        <h2>About me the geeky life hacker.</h2>
-        <p>I'm here to share my life hacks as a office worker but a student!</p>
+        <h2>About me the Geeky life hacker.</h2>
+        <p>I'm here to share my life saving hacks as a office worker and student!</p>
     </section>
 
     <section id="hacks">
         <h2>Life Hacks</h2>
         <article>
-            <h3>Life Hack number one!</h3>
+            <h2>Life Hack number one!</h2>
             <p>
                 Add some binder clips to your keyboard when the keyboard feet just wont work! 
  
@@ -40,24 +45,30 @@
         </article>
         
     </section>
-
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>If you want to send me some hacks to update this page on more life hacks contact me through a submission down below. </p>
-      
+    <title>Email Submission Form with Colored Border</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
         <form action="process_form.php" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br><br>
-    
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
-    
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-            <button type="submit"><h3 id="button" class="button-email">Send!</h3>
-                  </a>
-                </button>
+            <section id="contact">
+                <h3>Contact Us</h3><i class="glyphicon glyphicon-envelope"></i>
+                <p>If you want to send me some hacks to update this page on more life hacks contact me through a submission down below. </p>
+              
+                <form action="process_form.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+            
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+            
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                    <button type="submit"><h3 id="button" class="button-email">Send!</h3>
+                          </a>
+                        </button>
         </form>
+    </div>
     </section>
 
     <footer>
