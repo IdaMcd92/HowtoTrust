@@ -44,6 +44,20 @@
     <section id="contact">
         <h2>Contact Us</h2>
         <p>If you want to send me some hacks to update this page on more life hacks contact me through a submission down below. </p>
+      
+        <form action="process_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+    
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+            <button type="submit"><h3 id="button" class="button-email">Send!</h3>
+                  </a>
+                </button>
+        </form>
     </section>
 
     <footer>
